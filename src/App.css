@@ -1,0 +1,54 @@
+body > #root > div {
+	height: 100vh;
+	min-width:360px;
+}
+
+#root{
+	height:100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.bg { 
+	background-image: url("./assets/bg.jpeg");
+	height: 100%; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.panel-body {
+	padding: 20px
+}
+
+.loading {
+	margin-left: 50%;
+	margin-top: -0.5em;
+}

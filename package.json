@@ -1,0 +1,27 @@
+{
+  "name": "serverless-eth-wallet-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "auth0-js": "^9.0.2",
+    "axios": "^0.17.1",
+    "bootstrap": "^3.3.7",
+    "jwt-decode": "^2.2.0",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.32.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17",
+    "react-spinners": "^0.2.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+		"build": "sh -ac '. .env.${REACT_APP_ENV}; react-scripts build'",
+		"build:staging": "REACT_APP_ENV=staging npm run build",
+		"build:production": "REACT_APP_ENV=production npm run build",
+    "deploy": "npm run build:production && aws s3 sync build/ s3://eth-wallet",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
