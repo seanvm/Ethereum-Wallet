@@ -52,3 +52,7 @@ body > #root > div {
 	margin-left: 50%;
 	margin-top: -0.5em;
 }
+
+.panel-body  {
+	word-break:break-all
+}

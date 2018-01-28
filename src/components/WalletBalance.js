@@ -59,11 +59,12 @@ class WalletBalance extends Component {
 	
 	render() {
 		return (
-			<div className="row">
+			<div className="container-fluid">
+				<div className="row">
 					<div className="col-md-5 col-md-offset-1">
 						<Panel bsStyle="primary">
 							<Panel.Heading>Balance</Panel.Heading>
-							<Panel.Body>{this.state.loading ? this.loading() : this.state.balance}</Panel.Body>
+							<Panel.Body>{this.state.loading ? this.loading() : `${this.state.balance} Ether`}</Panel.Body>
 						</Panel>
 					</div>
 			
@@ -73,6 +74,7 @@ class WalletBalance extends Component {
 							<Panel.Body>{this.state.loading ? this.loading() : this.state.publicKey}</Panel.Body>
 						</Panel>
 					</div>
+				</div>
 			</div>
 		);
 	}
