@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Panel } from 'react-bootstrap';
 import Auth from '../utils/AuthService';
+import { Panel } from 'react-bootstrap';
 import { PropagateLoader } from 'react-spinners';
 
 const auth = new Auth();
